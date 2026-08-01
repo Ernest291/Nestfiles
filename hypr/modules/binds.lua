@@ -15,6 +15,7 @@ local mainMod = "SUPER" -- Sets "Windows" key as main modifier
 
 -- Example binds, see https://wiki.hypr.land/Configuring/Basics/Binds/ for more
 hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd(terminal))
+hl.bind(mainMod .. " + SHIFT + Q", hl.dsp.exec_cmd("kitty --session ~/.config/kitty/session.conf"))
 local closeWindowBind = hl.bind(mainMod .. " + C", hl.dsp.window.close())
 -- closeWindowBind:set_enabled(false)
 hl.bind(
@@ -26,8 +27,8 @@ hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -m output -c"))
 hl.bind(mainMod .. " + PRINT", hl.dsp.exec_cmd("hyprshot -m region"))
 hl.bind(mainMod .. "+ SHIFT + PRINT", hl.dsp.exec_cmd("hyprshot -m window"))
 -- hl.bind(mainMod .. " + R", hl.dsp.exec_cmd("rofi -show drun"))
-hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("waypaper --folder /home/ernest/Pictures/TQQ-Wallpapers"))
-hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd("waypaper --folder /home/ernest/Pictures/TQQ-Wallpapers --random"))
+hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("waypaper --folder /home/ernest/Pictures/Ado-Wallpapers"))
+hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd("waypaper --folder /home/ernest/Pictures/Ado-Wallpapers --random"))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("firefox"))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
